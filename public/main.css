@@ -1,0 +1,223 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+@layer reset-css {
+    /*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    * {
+        margin: 0;
+    }
+
+    body {
+        line-height: 1.5;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    img,
+    picture,
+    video,
+    canvas,
+    svg {
+        display: block;
+        max-width: 100%;
+    }
+
+    input,
+    button,
+    textarea,
+    select {
+        font: inherit;
+    }
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        overflow-wrap: break-word;
+    }
+
+    p {
+        text-wrap: pretty;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        text-wrap: balance;
+    }
+
+    #root,
+    #__next {
+        isolation: isolate;
+    }
+}
+
+body {
+    background-color: #2a2a2a;
+    color: #eaeaea;
+    max-width: 450px;
+    margin: auto;
+    box-shadow: 0 0 1em #111;
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    font-size: 1.15em;
+
+    a {
+        color: #00a05a;
+        text-decoration: none;
+
+        &:hover {
+            color: #00aa5a88;
+        }
+    }
+}
+
+main {
+    padding: 1em;
+}
+
+button {
+    background-color: #00000000;
+    cursor: pointer;
+    color: #00a05a;
+    border: none;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+     
+    &:hover {
+        /* background-color: #00a05a33;
+        border: #eaeaeaaa 1px solid; */
+        color: #eaeaea;
+        /* text-decoration: none; */
+    }
+
+    img {
+        width: 30px;
+        
+        &:active {
+            transform: translateY(7);
+            -webkit-transform: translateY(7);
+            -moz-transform: translateY(7);
+            -ms-transform: translateY(7);
+            -o-transform: translateY(7);
+}
+    }
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+header {
+    font-size: 1.5em;
+    font-weight: 900;
+    color: #fff;
+    height: 150px;
+    background-color: #00a05a88;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    a {
+        color: #eaeaea;
+        display: block;
+        transition: .3s;
+        -webkit-transition: .3s;
+        -moz-transition: .3s;
+        -ms-transition: .3s;
+        -o-transition: .3s;
+        
+        &:hover {
+            color: #00a05a;
+            filter: drop-shadow(3px 3px 0em #aaa);
+            -webkit-text-stroke: #2a2a2a 1px;
+            transform: translate(-5px,-7.5px);
+            transform: scale(1.25);
+            -webkit-filter: drop-shadow(3px 3px 0em #aaa);
+            -webkit-transform: scale(1.25);
+            -moz-transform: scale(1.25);
+            -ms-transform: scale(1.25);
+            -o-transform: scale(1.25);
+}
+    }
+}
+
+header,
+footer {
+    text-align: center;
+}
+
+footer {
+    background: #2a2a2a;
+    position: fixed;
+    bottom: .25em;
+    padding-top: .25em;
+    border-top: 1px solid #1a1a1a;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 450px;
+    z-index: 100;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0em;
+
+    li {
+        border: #1e1e1e 1px solid;
+        margin-block: 0.5em;
+        padding-block: 0.25em;
+        padding-inline: 0.5em;
+        border-radius: 0.25em;
+        -webkit-border-radius: 0.25em;
+        -moz-border-radius: 0.25em;
+        -ms-border-radius: 0.25em;
+        -o-border-radius: 0.25em;
+        transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+
+        a {
+            display: block;
+        }
+
+        &:hover {
+            background-color: #00a05a33;
+            border: #eaeaeaaa 1px solid;
+
+            a {
+                color: #eaeaea;
+            }
+        }
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding-block: .5em;
+    padding-inline: .25em;
+}
