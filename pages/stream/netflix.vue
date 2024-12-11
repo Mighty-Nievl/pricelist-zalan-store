@@ -1,8 +1,14 @@
 <template>
 <div>
     <h1>Netflix</h1>
+    <h3>Sharing</h3>
     <ul>
-        <li></li>
+        <li>1U</li>
+        <li>2U</li>
+    </ul>
+    <ul>Private
+        <li>1U</li>
+        <li>2U</li>
     </ul>
 </div>
 </template>
