@@ -4,4 +4,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['~/public/main.css'],
   modules: ['@pinia/nuxt', '@nuxtjs/sitemap', '@nuxtjs/color-mode'],
+  nitro: {
+    preset: 'github_pages'
+  }
 })
