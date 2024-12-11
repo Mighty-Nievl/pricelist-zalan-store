@@ -8,6 +8,6 @@ export default defineNuxtConfig({
     preset: 'github_pages'
   },
   devServer: {
-    host: 'https://mighty-nievl.github.io/pricelist-zalan-store', // Ganti dengan alamat yang diinginkan
+    host: 'mighty-nievl.github.io/pricelist-zalan-store', // Ganti dengan alamat yang diinginkan
   }
 })
