@@ -14,33 +14,35 @@ console.log(colorMode.preference)
 </script>
 
 <template>
-    <UHeader>
-        <div :class="{ 'ree': !showNav }"></div>
-        <nav v-if="showNav">
-            <button @click="goBack" id="back">
-                <img src="/public/back.svg" alt="back button">
-            </button>
-            <button @click="goHome" id="home">
-                <img src="/public/home.svg" alt="back button">
-            </button>
-        </nav>
-    </UHeader>
-    <main>
-        <slot />
-    </main>
-    <UFooter>
-        <div class="tema">
-            <!-- <p>Sekarang tema {{ $colorMode.value }}</p> -->
-            <select v-model="$colorMode.preference">
-                <option value="system">System</option>
-                <option value="light">Light</option>
-                <option value="dark">Dark</option>
-            </select>
-        </div>
-        <footer>
-            2024 © <NuxtLink to="/">Zalan Store</NuxtLink>
-        </footer>
-    </UFooter>
+    <div>
+        <UHeader>
+            <div :class="{ 'ree': !showNav }"></div>
+            <nav v-if="showNav">
+                <button @click="goBack" id="back">
+                    <img src="/public/back.svg" alt="back button">
+                </button>
+                <button @click="goHome" id="home">
+                    <img src="/public/home.svg" alt="back button">
+                </button>
+            </nav>
+        </UHeader>
+        <main>
+            <slot />
+        </main>
+        <UFooter>
+            <div class="tema">
+                <!-- <p>Sekarang tema {{ $colorMode.value }}</p> -->
+                <select v-model="$colorMode.preference">
+                    <option value="system">System</option>
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                </select>
+            </div>
+            <footer>
+                2024 © <NuxtLink to="/">Zalan Store</NuxtLink>
+            </footer>
+        </UFooter>
+    </div>
 </template>
 
 <style scoped>
