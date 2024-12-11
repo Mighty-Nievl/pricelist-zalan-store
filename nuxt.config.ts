@@ -1,9 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  target: 'static',
-  router: {
-    base: '/pricelist-zalan-store', // Ganti dengan nama repository GitHub Anda
-  },
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
   css: ['~/public/main.css'],
@@ -11,4 +7,7 @@ export default defineNuxtConfig({
   nitro: {
     preset: 'github_pages'
   },
+  devServer: {
+    host: 'https://mighty-nievl.github.io/pricelist-zalan-store', // Ganti dengan alamat yang diinginkan
+  }
 })
