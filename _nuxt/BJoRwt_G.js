@@ -1,0 +1,1 @@
+import{_ as n}from"./DlAUqK2U.js";import{c as t,a as l,d as r,o}from"./CQo0Nz8A.js";const a={};function u(i,e){return o(),t("div",null,e[0]||(e[0]=[l("h1",null,"Netflix",-1),l("h3",null,"Sharing",-1),l("ul",null,[l("li",null,"1U"),l("li",null,"2U")],-1),l("ul",null,[r("Private "),l("li",null,"1U"),l("li",null,"2U")],-1)]))}const f=n(a,[["render",u]]);export{f as default};

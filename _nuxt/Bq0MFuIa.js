@@ -1,0 +1,1 @@
+import{_ as r}from"./DlAUqK2U.js";import{c as o,a as n,o as t}from"./CQo0Nz8A.js";const a={};function s(c,e){return t(),o("div",null,e[0]||(e[0]=[n("h1",null,"Amazon Prime",-1)]))}const f=r(a,[["render",s]]);export{f as default};
